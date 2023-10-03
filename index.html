@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tu Sitio Web</title>
+    <!-- Vinculación de Bootstrap desde CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* Estilos personalizados */
+        body {
+            background-color: #fff; /* Fondo blanco para el contenido principal */
+            color: #000; /* Color de texto */
+        }
+        .jumbotron {
+            background: url('https://cdn.pixabay.com/photo/2018/09/27/09/22/artificial-intelligence-3706562_1280.jpg') no-repeat center;
+            background-size: cover;
+            color: #fff; /* Color de texto en el jumbotron */
+            padding: 20px;
+            text-align: center;
+            margin-bottom: 0;
+            position: relative;
+            filter: grayscale(100%); /* Aplicar tonos de grises */
+        }
+        .jumbotron:after {
+            content: "";
+            background: url('https://example.com/marca-de-agua.png'); /* Sustituye esto con la URL de tu marca de agua */
+            opacity: 0.2; /* Opacidad de la marca de agua */
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            position: absolute;
+            z-index: -1;
+        }
+        .navbar {
+            background-color: #58B2AF; /* Color del menú */
+        }
+    </style>
+</head>
+<body>
+    <!-- Menú de navegación -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Inicio</a>
+            <a class="navbar-brand" href="equipo.html">Equipo</a>
+            <a class="navbar-brand" href="noticias.html">Noticias</a>
+        </div>
+    </nav>
+
+    <!-- Jumbotron -->
+    <div class="jumbotron">
+        <h1>Bienvenido a Tu Sitio Web</h1>
+        <p>Texto alusivo al tema del proyecto.</p>
+    </div>
+
+    <!-- Contenido principal -->
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-md-8">
+                <h2>Título del contenido principal</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit....</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit....</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit....</p>
+                <!-- Video de YouTube -->
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/K5pkkuiyRzk" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Vinculación de Bootstrap y jQuery desde CDN -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+
